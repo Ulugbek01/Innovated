@@ -425,10 +425,97 @@ body {
 }
 
 /* Services styles */
+.services {
+  padding: 100px 0;
+}
+
+.services-card__items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .services-card__item {
   width: 360px;
   height: 412px;
   border-radius: 10px;
-  background: rgba(0, 0, 0, 0.6);
+  margin: 30px 0;
+  padding: 40px;
+  background-color: rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(104px);
+}
+
+.services-card__item-box {
+  background-color: #f3f3f3;
+  height: 100%;
+  border-radius: 10px;
+  padding: 60px 30px;
+  text-align: center;
+  color: var(--color-primary);
+  transition: all 0.37s;
+}
+
+.services-card__item-box .icon-wrapper {
+  display: flex;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #fff;
+  margin: 40px auto 0 auto;
+}
+
+.services-card__item-box h4 {
+  color: var(--color-secondary);
+}
+
+.services-card__item-box p {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.services-card__item {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+
+.services-card__item:hover .services-card__item-box {
+  background: linear-gradient(180deg, #d93059 0%, #d95b7a 100%);
+  color: #fff;
+  transform: translateY(12px);
+  /* transition: all 0.37s; */
+}
+
+.services-card__item:hover .services-card__item-box h4 {
+  color: #fff;
+}
+
+.services-card__item:hover .services-card__item-box path {
+  stroke: #3988ff;
+}
+
+.services-card__item:nth-child(1):hover {
+  background-image: url("../assets/images/web_development.png");
+}
+
+.services-card__item:nth-child(2):hover {
+  background-image: url("../assets/images/product_branding.png");
+}
+
+.services-card__item:nth-child(3):hover {
+  background-image: url("../assets/images/website_solution.png");
+}
+
+.services-card__item:nth-child(4):hover {
+  background-image: url("../assets/images/clean_code.png");
+}
+
+.services-card__item:nth-child(5):hover {
+  background-image: url("../assets/images/digital_marketing.png");
+}
+
+.services-card__item:nth-child(6):hover {
+  background-image: url("../assets/images/custom_support.png");
 }
