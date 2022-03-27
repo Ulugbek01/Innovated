@@ -1,10 +1,14 @@
 "use strict";
-document.addEventListener("click", () =>
-  document
-    .querySelectorAll(".billing-wrapper span")
-    .forEach((value) =>
-      value.className === "active"
-        ? (value.className = "")
-        : (value.className = "active")
-    )
-);
+document
+  .querySelector(".billing-wrapper")
+  .addEventListener("click", () =>
+    document
+      .querySelectorAll(".billing-wrapper span")
+      .forEach((value) =>
+        value.className === "active"
+          ? (value.className = "")
+          : (value.className = "active")
+      )
+  );
+
+console.log(window.document);
