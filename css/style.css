@@ -481,6 +481,12 @@ body {
   background-position: center center;
 }
 
+.services .discription {
+  width: 50%;
+  margin: 24px 0;
+  color: var(--color-primary);
+}
+
 .services-card__item:hover .services-card__item-box {
   background: linear-gradient(180deg, #d93059 0%, #d95b7a 100%);
   color: #fff;
@@ -518,4 +524,61 @@ body {
 
 .services-card__item:nth-child(6):hover {
   background-image: url("../assets/images/custom_support.png");
+}
+
+/* Pricing styles */
+.billing-cards__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.billing-card {
+  width: 360px;
+  box-shadow: 0px 4px 30px rgba(153, 153, 153, 0.14);
+  border-radius: 10px;
+  text-align: center;
+  color: var(--color-primary);
+}
+
+.billing-card__header {
+  height: 100px;
+  box-shadow: 0px 1px 0px rgba(153, 153, 153, 0.14);
+  text-transform: uppercase;
+  line-height: 100px;
+  font-size: 20px;
+  color: var(--color-secondary);
+}
+
+.billing-card .price-wrapper {
+  color: var(--color-secondary);
+  line-height: 2;
+}
+
+.billing-card .price-wrapper .price {
+  font-size: 32px;
+}
+
+.price-wrapper .price span {
+  font-size: 16px;
+}
+
+.price-wrapper {
+  padding: 40px 0;
+}
+
+.billing-card .card-btn {
+  padding: 40px 0;
+}
+
+.support-section {
+  line-height: 2;
+}
+
+.billing-card .card-btn a {
+  border: 1px solid #3988ff;
+  border-radius: 5px;
+  text-decoration: none;
+  padding: 15px 30px;
+  color: #3988ff;
 }
