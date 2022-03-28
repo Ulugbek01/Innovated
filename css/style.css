@@ -638,12 +638,18 @@ body {
 /* Clients styles */
 .clients {
   padding: 100px 0;
+  text-align: center;
+}
+
+.clients .intro-info {
+  margin: 10px 0 40px 0;
 }
 
 .clients-card__wrapper {
   display: flex;
   align-items: center;
   padding: 40px 60px;
+  text-align: left;
 }
 
 .clients-card .discription {
@@ -661,7 +667,18 @@ body {
 
 .discription_wrapper {
   display: flex;
-  margin-bottom: 30px;
+  margin: 0 0 30px 40px;
+  position: relative;
+}
+
+.discription_wrapper .mark-icon {
+  position: absolute;
+  top: -20px;
+  left: -44px;
+}
+
+.mark-icon svg path {
+  fill: #f0cfd7;
 }
 
 .clients-card__wrapper {
