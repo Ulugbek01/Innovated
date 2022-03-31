@@ -859,11 +859,34 @@ body {
     flex-direction: column;
   }
 
+  .features .discription {
+    padding: 0;
+  }
+
+  .features-item__card {
+    margin-bottom: 20px;
+  }
+
   /* Services styles */
+  .services .title {
+    font-size: 22px;
+  }
+
+  .services .discription{
+    width: 100%;
+  }
+
+  .services-card__item:hover{
+    background-size: cover;
+  }
 
   /* Pricing styles */
   .billing-cards__wrapper {
     flex-direction: column;
+  }
+
+  .pricing .billing-card {
+    margin-bottom: 20px;
   }
 
   /* Clinets styles*/
