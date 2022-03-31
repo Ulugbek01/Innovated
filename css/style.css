@@ -57,6 +57,28 @@
   --footer-bg-color: #050c26;
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #15c1cc;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #3988ff;
+}
+
 body {
   font-family: var(--font-default), sans-serif;
 }
@@ -82,6 +104,9 @@ body {
 .main-header {
   background-color: #fff5f5;
   padding: 20px 0;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
 }
 
 .main-header .container {
@@ -154,6 +179,10 @@ body {
   padding-right: 150px;
 }
 
+.hero .container > div {
+  width: 50%;
+}
+
 .hero-info .title {
   font-family: "Lato", sans-serif;
   font-weight: 700;
@@ -188,7 +217,7 @@ body {
 }
 
 .hero-image img {
-  width: 100%;
+  width: 90%;
 }
 
 .more-info {
@@ -259,7 +288,7 @@ body {
 
 .about .discription {
   color: var(--color-primary);
-  padding: 24px 0 48px 0;
+  padding: 24px 250px 48px 250px;
   line-height: 1.6;
 }
 
@@ -273,8 +302,8 @@ body {
 }
 
 .about .skills {
-  text-align: left;
   margin-left: 48px;
+  text-align: left;
 }
 .skills p {
   margin-bottom: 16px;
@@ -289,13 +318,14 @@ body {
 }
 
 .line-wrapper__1 {
-  width: 422px;
+  width: 80%;
   background-color: #e41a1a;
+  border: 2px solid black;
 }
 
 .line-wrapper::after {
   position: absolute;
-  top: -36px;
+  top: -40px;
   right: -10px;
 }
 
@@ -320,23 +350,23 @@ body {
 }
 
 .line-wrapper__2 {
-  width: 458px;
+  width: 90%;
   background-color: #da5a12;
 }
 
 .line-wrapper__3 {
-  width: 398px;
+  width: 75%;
   background-color: #5bbb10;
 }
 
 .line-wrapper__4 {
-  width: 422px;
+  width: 80%;
   background-color: #15c1cc;
 }
 
 .line-wrapper__bg {
   display: inline-block;
-  width: 488px;
+  width: 450px;
   height: 15px;
   border-radius: 10px;
   opacity: 0.1;
@@ -762,4 +792,99 @@ body {
 
 .footer .container > div:first-child {
   width: 25%;
+}
+
+.bottom_right_btn {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-color: #3988ff;
+  border-radius: 50%;
+  line-height: 40px;
+  text-align: center;
+  color: #fff;
+  position: fixed;
+  right: 15px;
+  bottom: 10px;
+  z-index: 111;
+  opacity: 0;
+}
+
+/* Media queries */
+@media only screen and (max-width: 576px) {
+  .container {
+    width: 96%;
+  }
+
+  .main-header {
+    display: none;
+  }
+
+  /* Hero styles */
+  .hero .container {
+    flex-direction: column;
+  }
+
+  .hero .container > div {
+    width: 100%;
+  }
+
+  .hero-info {
+    padding-right: 0;
+  }
+
+  .hero-info .title {
+    font-size: 24px;
+  }
+
+  /* About styles */
+  .about .title {
+    font-size: 22px;
+  }
+
+  .about .discription {
+    padding: 24px 0 48px 0;
+  }
+
+  .about-our__more {
+    flex-direction: column;
+  }
+
+  .about .skills {
+    margin-left: 0;
+  }
+
+  /* Features styles */
+  .features-items {
+    flex-direction: column;
+  }
+
+  /* Services styles */
+
+  /* Pricing styles */
+  .billing-cards__wrapper {
+    flex-direction: column;
+  }
+
+  /* Clinets styles*/
+  .clients-card__wrapper {
+    flex-direction: column;
+  }
+
+  /* Footer styles */
+  .footer .container {
+    flex-direction: column;
+  }
+
+  .footer .container > div {
+    width: 100%;
+  }
+
+  .footer .container > div:first-child {
+    width: 100%;
+  }
+
+  .footer-container {
+    width: 90%;
+  }
 }
