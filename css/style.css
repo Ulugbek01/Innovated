@@ -305,90 +305,58 @@ body {
   margin-left: 48px;
   text-align: left;
 }
+
+.skills {
+  width: 30%;
+}
+
 .skills p {
   margin-bottom: 16px;
 }
 
-.line-wrapper {
-  display: inline-block;
-  height: 15px;
-  border-radius: 10px;
-  margin-bottom: 36px;
-  position: relative;
-}
-
-.line-wrapper__1 {
-  width: 80%;
-  background-color: #e41a1a;
-  border: 2px solid black;
-}
-
-.line-wrapper::after {
-  position: absolute;
-  top: -40px;
-  right: -10px;
-}
-
-.percent-value__1::after {
-  content: "80%";
-  color: #e41a1a;
-}
-
-.percent-value__2::after {
-  content: "90%";
-  color: #da5a12;
-}
-
-.percent-value__3::after {
-  content: "75%";
-  color: #5bbb10;
-}
-
-.percent-value__4::after {
-  content: "80%";
-  color: #15c1cc;
-}
-
-.line-wrapper__2 {
-  width: 90%;
-  background-color: #da5a12;
-}
-
-.line-wrapper__3 {
-  width: 75%;
-  background-color: #5bbb10;
-}
-
-.line-wrapper__4 {
-  width: 80%;
-  background-color: #15c1cc;
-}
-
 .line-wrapper__bg {
-  display: inline-block;
-  width: 450px;
+  width: 100%;
   height: 15px;
-  border-radius: 10px;
-  opacity: 0.1;
-  position: absolute;
-  top: 0;
-  left: 0;
+  border-radius: 15px;
+  margin-bottom: 30px;
 }
 
-.line-wrapper__bg-1 {
-  background-color: #e41a1a;
+.line-wrapper {
+  width: 80%;
+  height: 15px;
+  border-radius: 15px;
 }
 
-.line-wrapper__bg-2 {
-  background-color: #da5a12;
+.line-wrapper__bg-1{
+  background-color: rgba(228, 26, 26, 0.1);
 }
 
-.line-wrapper__bg-3 {
-  background-color: #5bbb10;
+.line-wrapper__bg-2{
+  background-color: rgba(218, 90, 18, 0.1);
 }
 
-.line-wrapper__bg-4 {
-  background-color: #15c1cc;
+.line-wrapper__bg-3{
+  background-color: rgba(91, 187, 16, 0.1);
+}
+
+.line-wrapper__bg-4{
+  background-color: rgba(21, 193, 204, 0.11);
+}
+
+.line-wrapper-1{
+  background-color: #E41A1A;
+}
+
+.line-wrapper-2{
+  background-color: #DA5A12;
+}
+
+.line-wrapper-3{
+  background-color: #5BBB10;
+}
+
+.line-wrapper-4{
+  background-color: #15C1CC;
 }
 
 /* Features styles */
@@ -848,6 +816,10 @@ body {
 
   .about-our__more {
     flex-direction: column;
+  }
+
+  .skills {
+    width: 96%;
   }
 
   .about .skills {
