@@ -319,12 +319,35 @@ body {
   height: 15px;
   border-radius: 15px;
   margin-bottom: 30px;
+  position: relative;
+}
+
+.line-wrapper__bg::after {
+  position: absolute;
+  top: -34px;
+  right: 0;
 }
 
 .line-wrapper {
   width: 80%;
   height: 15px;
   border-radius: 15px;
+}
+
+.percent-value__1::after{
+  content: '80%';
+}
+
+.percent-value__2::after{
+  content: '90%';
+}
+
+.percent-value__3::after{
+  content: '75%';
+}
+
+.percent-value__4::after{
+  content: '80%';
 }
 
 .line-wrapper__bg-1{
@@ -779,6 +802,436 @@ body {
 }
 
 /* Media queries */
+@media only screen and (max-width: 1200px) {
+  .container {
+    width: 96%;
+  }
+
+  /* Hero styles */
+  .hero .container > div {
+    width: 100%;
+  }
+
+  .hero-info {
+    padding-right: 0;
+  }
+
+  .hero-info .title {
+    font-size: 24px;
+  }
+
+  /* About styles */
+  .about .title {
+    font-size: 22px;
+  }
+
+  .about {
+    width: 96%;
+  }
+
+  .about-our__more > div{
+    width: 50%;
+  }
+
+  .skills {
+    padding-left: 20px;
+  }
+
+  .about .discription {
+    padding: 24px 0 48px 0;
+  }
+
+  .about .skills {
+    margin-left: 0;
+  }
+
+  /* Features styles */
+  .features-items {
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .features .discription {
+    padding: 0;
+  }
+
+  .features-item__card {
+    margin-bottom: 20px;
+  }
+
+  /* Services styles */
+  #services {
+    text-align: center;
+  }
+
+  .services-card__items {
+    justify-content: center;
+  }
+
+  .services-card__item {
+    margin-right: 20px;
+  }
+
+  .services .title {
+    font-size: 22px;
+  }
+
+  .services .discription{
+    width: 100%;
+  }
+
+  .services-card__item:hover{
+    background-size: cover;
+  }
+
+  /* Pricing styles */
+  .billing-cards__wrapper {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .billing-card {
+    margin-right: 20px;
+  }
+ 
+  .pricing .billing-card {
+    margin-bottom: 20px;
+  }
+
+  /* Clinets styles*/
+  .clients {
+    padding: 20px 0;
+  }
+
+  .clients-card__wrapper {
+    flex-direction: column;
+  }
+
+  .clients-card__wrapper{
+    padding: 0;
+  }
+
+  .clients-card__wrapper > div {
+    padding: 30px;
+  }
+
+  .clients-card .discription {
+    width: 100%;
+  }
+
+  /* Footer styles */
+  .footer {
+    padding: 20px 0;
+  }
+
+  .footer .container {
+    flex-direction: column;
+  }
+
+  .footer .container > div {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .footer .container > div .header {
+    margin-bottom: 10px;
+  }
+
+  .footer .container > div:first-child {
+    width: 100%;
+  }
+
+  .footer-container {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .container {
+    width: 96%;
+  }
+
+  .main-header .main-navigation__item {
+    margin-right: 16px;
+  }
+
+  .main-header a{
+    font-size: 14px;
+  }
+
+  /* Hero styles */
+  .hero .container {
+    flex-direction: column;
+  }
+
+  .hero .container > div {
+    width: 100%;
+  }
+
+  .hero-info {
+    padding-right: 0;
+  }
+
+  .hero-info .title {
+    font-size: 24px;
+  }
+
+  /* About styles */
+  .about .title {
+    font-size: 22px;
+  }
+
+  .about .discription {
+    padding: 24px 0 48px 0;
+  }
+
+  .about-our__more {
+    flex-direction: column;
+  }
+
+  .skills {
+    width: 96%;
+  }
+
+  .about .skills {
+    margin-left: 0;
+  }
+
+  /* Features styles */
+  .features-items {
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .features .discription {
+    padding: 0;
+  }
+
+  .features-item__card {
+    margin-bottom: 20px;
+  }
+
+  /* Services styles */
+  #services {
+    text-align: center;
+  }
+
+  .services-card__item {
+    margin: 10px auto;
+  }
+
+  .services .title {
+    font-size: 22px;
+  }
+
+  .services .discription{
+    width: 100%;
+  }
+
+  .services-card__item:hover{
+    background-size: cover;
+  }
+
+  /* Pricing styles */
+  .billing-cards__wrapper {
+    flex-direction: column;
+  }
+
+  .pricing .billing-card {
+    margin-bottom: 20px;
+  }
+
+  /* Clinets styles*/
+  .clients {
+    padding: 20px 0;
+  }
+
+  .clients-card__wrapper {
+    flex-direction: column;
+  }
+
+  .clients-card__wrapper{
+    padding: 0;
+  }
+
+  .clients-card__wrapper > div {
+    padding: 30px;
+  }
+
+  .clients-card .discription {
+    width: 100%;
+  }
+
+  /* Footer styles */
+  .footer {
+    padding: 20px 0;
+  }
+
+  .footer .container {
+    flex-direction: column;
+  }
+
+  .footer .container > div {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .footer .container > div .header {
+    margin-bottom: 10px;
+  }
+
+  .footer .container > div:first-child {
+    width: 100%;
+  }
+
+  .footer-container {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    width: 96%;
+  }
+
+  .main-header {
+    display: none;
+  }
+
+  /* Hero styles */
+  .hero .container {
+    flex-direction: column;
+  }
+
+  .hero .container > div {
+    width: 100%;
+  }
+
+  .hero-info {
+    padding-right: 0;
+  }
+
+  .hero-info .title {
+    font-size: 24px;
+  }
+
+  /* About styles */
+  .about .title {
+    font-size: 22px;
+  }
+
+  .about .discription {
+    padding: 24px 0 48px 0;
+  }
+
+  .about-our__more {
+    flex-direction: column;
+  }
+
+  .skills {
+    width: 96%;
+  }
+
+  .about .skills {
+    margin-left: 0;
+  }
+
+  /* Features styles */
+  .features-items {
+    flex-direction: column;
+  }
+
+  .features .discription {
+    padding: 0;
+  }
+
+  .features-item__card {
+    margin-bottom: 20px;
+  }
+
+  /* Services styles */
+  #services {
+    text-align: center;
+  }
+
+  .services-card__item {
+    margin: 10px auto;
+  }
+
+  .services .title {
+    font-size: 22px;
+  }
+
+  .services .discription{
+    width: 100%;
+  }
+
+  .services-card__item:hover{
+    background-size: cover;
+  }
+
+  /* Pricing styles */
+  .billing-cards__wrapper {
+    flex-direction: column;
+  }
+
+  .pricing .billing-card {
+    margin-bottom: 20px;
+  }
+
+  /* Clinets styles*/
+  .clients {
+    padding: 20px 0;
+  }
+
+  .clients-card__wrapper {
+    flex-direction: column;
+  }
+
+  .clients-card__wrapper{
+    padding: 0;
+  }
+
+  .clients-card__wrapper > div {
+    padding: 30px;
+  }
+
+  .clients-card .discription {
+    width: 100%;
+  }
+
+  /* Footer styles */
+  .footer {
+    padding: 20px 0;
+  }
+
+  .footer .container {
+    flex-direction: column;
+  }
+
+  .footer .container > div {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .footer .container > div .header {
+    margin-bottom: 10px;
+  }
+
+  .footer .container > div:first-child {
+    width: 100%;
+  }
+
+  .footer-container {
+    width: 90%;
+  }
+}
+
 @media only screen and (max-width: 576px) {
   .container {
     width: 96%;
@@ -862,17 +1315,43 @@ body {
   }
 
   /* Clinets styles*/
+  .clients {
+    padding: 20px 0;
+  }
+
   .clients-card__wrapper {
     flex-direction: column;
   }
 
+  .clients-card__wrapper{
+    padding: 0;
+  }
+
+  .clients-card__wrapper > div {
+    padding: 30px;
+  }
+
+  .clients-card .discription {
+    width: 100%;
+  }
+
   /* Footer styles */
+  .footer {
+    padding: 20px 0;
+  }
+
   .footer .container {
     flex-direction: column;
   }
 
   .footer .container > div {
     width: 100%;
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .footer .container > div .header {
+    margin-bottom: 10px;
   }
 
   .footer .container > div:first-child {
