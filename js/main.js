@@ -11,4 +11,10 @@ document
       )
   );
 
-console.log(window.pageYOffset);
+// console.log(window.pageYOffset);
+
+const mainNavItems = document.querySelector(".main-navigations__items"),
+  toggleBtn = document.querySelector(".nav-toggle__btn");
+toggleBtn.addEventListener("click", () => {
+  mainNavItems.classList.toggle("main-navigations__items-open");
+});
